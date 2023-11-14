@@ -1,14 +1,17 @@
 'use client';
 
 import { CustomButtonProps } from '@/types';
+import Link from 'next/link';
 import React from 'react';
 
-function CustomButton({ title, containerStyles, handleClick }: CustomButtonProps) {
+function CustomButton({ title, containerStyles, link }: CustomButtonProps) {
   return (
     <>
-      <button disabled={false} type={'button'} className={`custom-btn ${containerStyles}`} onClick={handleClick}>
-        <span className="flex-1">{title}</span>
-      </button>
+      <Link href={`${link}`} className={`custom-btn ${containerStyles}`}>
+        <button disabled={false} type={'button'}>
+          <span className="flex-1">{title}</span>
+        </button>
+      </Link>
     </>
   );
 }

@@ -55,11 +55,11 @@
 }
 
 .hero_title {
-  @apply 2xl:text-[400px] sm:text-[180px] text-[50px] font-extrabold text-center text-white;
+  @apply 2xl:text-[360px] sm:text-[180px] text-[50px] font-extrabold text-center text-white;
 }
 
 .hero_subtitle {
-  @apply 2xl:text-[100px] sm:text-[20px] text-center font-light mt-5 text-white;
+  @apply 2xl:text-[80px] sm:text-[20px] text-center font-light text-white;
 }
 
 .hero__image-container {
@@ -78,7 +78,7 @@
 /* START: Home styles */
 
 .home {
-  @apply flex 2xl:flex-row flex-col gap-5 relative z-0 max-w-[1920px] mx-auto bg-gradient-to-b from-lime-900 to-grey;
+  @apply flex 2xl:flex-row flex-col gap-5 relative z-0 max-w-[1920px] padding-x py-36 mx-auto bg-gradient-to-b from-lime-900 to-grey;
 }
 
 .home_padding {
@@ -94,7 +94,7 @@
 }
 
 .home_subtitle {
-  @apply 2xl:text-[20px] sm:text-[10px] pr-10 font-light mt-5 text-white;
+  @apply 2xl:text-[25px] sm:text-[17px] pr-10 font-light mt-5 text-white;
 }
 
 .home_image {
