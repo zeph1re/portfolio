@@ -132,23 +132,23 @@
 /* START : Work Styles */
 
 .work {
-  @apply flex flex-col padding-y relative z-0 max-w-[1920px] mx-auto bg-yellow-100 sm:px-16;
+  @apply flex flex-col padding-y max-w-[1920px] mx-auto bg-teal-950 sm:px-16;
 }
 
 .work_title {
-  @apply 2xl:text-[100px] sm:text-[60px] text-[50px] font-extrabold pb-10 sm:mx-auto;
+  @apply 2xl:text-[100px] sm:text-[60px] text-[50px] font-extrabold pb-10 text-white sm:mx-auto;
 }
 
 .project_container {
-  @apply container flex 2xl:flex-row flex-col content-center padding-y mx-auto gap-5;
+  @apply flex flex-wrap 2xl:flex-row flex-col content-center padding-y gap-5;
 }
 
 .project_card {
-  @apply 2xl:flex-1 flex 2xl:flex-col flex-row bg-white py-5 mx-auto rounded-lg xl:max-w-2xl shadow-lg;
+  @apply 2xl:basis-1/4 flex 2xl:flex-col flex-row bg-white py-5 mx-auto rounded-lg shadow-lg;
 }
 
 .project_title {
-  @apply text-center 2xl:text-[40px] sm:text-[30px] text-[20px] font-extrabold;
+  @apply text-center 2xl:text-[35px] sm:text-[45px] text-[20px] font-extrabold;
 }
 
 .project_description {
