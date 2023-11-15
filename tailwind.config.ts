@@ -8,6 +8,8 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
+        white: '#EEEBE3',
+
         'black-100': '#2B2C35',
         'primary-blue': {
           DEFAULT: '#2B59FF',
@@ -15,8 +17,8 @@ module.exports = {
         },
         'secondary-orange': '#f79761',
         'light-white': {
-          DEFAULT: 'rgba(59,60,152,0.03)',
-          100: 'rgba(59,60,152,0.02)',
+          DEFAULT: 'rgba(238, 235, 227, 1)',
+          100: 'rgba(238, 235, 227, 0.1)',
         },
         grey: '#747A88',
       },
