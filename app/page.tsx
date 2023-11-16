@@ -1,4 +1,4 @@
-import { Hero, Footer, About, Work } from '@/components';
+import { Hero, Footer, About, Work, Connect } from '@/components';
 import Header from '@/components/CustomHeader';
 import Image from 'next/image';
 
@@ -8,6 +8,7 @@ export default function Home() {
       <Hero />
       <About />
       <Work />
+      <Connect />
       <Footer />
     </main>
   );

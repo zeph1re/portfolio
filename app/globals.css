@@ -62,7 +62,7 @@
 }
 
 .hero_title {
-  @apply 2xl:text-[360px] sm:text-[180px] text-[50px] font-extrabold text-center text-light-white;
+  @apply 2xl:text-[360px] md:text-[180px] sm:text-[120px] text-[20px] font-extrabold text-center text-light-white;
 }
 
 .hero_subtitle {
@@ -97,15 +97,15 @@
 }
 
 .home_title {
-  @apply 2xl:text-[100px] sm:text-[60px] text-[50px] font-extrabold text-light-white;
+  @apply 2xl:text-[100px] sm:text-[70px] text-[50px] font-extrabold text-light-white;
 }
 
 .home_subtitle {
-  @apply 2xl:text-[25px] sm:text-[17px] pr-10 font-light mt-5 text-light-white;
+  @apply 2xl:text-[25px] sm:text-[15px] pr-10 font-light mt-5 text-light-white;
 }
 
 .home_image {
-  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
+  @apply sm:overflow-hidden xl:w-full xl:h-full;
 }
 
 /* .home__text-container {
@@ -140,11 +140,11 @@
 }
 
 .project_container {
-  @apply flex flex-wrap 2xl:flex-row flex-col content-center padding-y gap-5;
+  @apply flex flex-wrap 2xl:flex-row flex-col content-center padding-y gap-7;
 }
 
 .project_card {
-  @apply 2xl:basis-1/4 flex 2xl:flex-col flex-row bg-white py-5 mx-auto rounded-lg shadow-lg;
+  @apply 2xl:basis-1/4 flex 2xl:flex-col flex-row bg-white py-5 mx-auto rounded-lg shadow-lg hover:-translate-y-1 hover:scale-105 px-5 delay-200 transition ease-in-out;
 }
 
 .project_title {
