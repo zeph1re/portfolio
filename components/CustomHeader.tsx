@@ -9,7 +9,7 @@ function Header() {
       <div className="container mx-auto px-4 self-end text-white ">
         <div className="flex justify-center p-6">
           <div className="rounded-full py-2  backdrop-blur-md bg-white/10 hover:z-50 ">
-            <div className="flex flex-row gap-2 mx-4 my-1 h-9 ">
+            <div className="flex flex-row gap-2 mx-4 my-1 ">
               <Link href="/">
                 <button className="header_button">Work /</button>
               </Link>
