@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +11,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 /* START: General styles */
@@ -62,7 +68,7 @@
 }
 
 .hero_title {
-  @apply 2xl:text-[360px] md:text-[180px] sm:text-[120px] text-[20px] font-extrabold text-center text-light-white;
+  @apply 2xl:text-[400px] xl:text-[250px] md:text-[200px] sm:text-[120px] text-[20px] font-extrabold text-center text-light-white title drop-shadow-lg;
 }
 
 .hero_subtitle {
@@ -93,11 +99,11 @@
 }
 
 .home_title_overlay {
-  @apply 2xl:text-[800];
+  @apply 2xl:text-[800px];
 }
 
 .home_title {
-  @apply 2xl:text-[100px] sm:text-[70px] text-[50px] font-extrabold text-light-white;
+  @apply 2xl:text-[200px] sm:text-[70px] text-[50px] font-extrabold text-light-white title;
 }
 
 .home_subtitle {
@@ -105,7 +111,7 @@
 }
 
 .home_image {
-  @apply sm:overflow-hidden xl:w-full xl:h-full;
+  @apply sm:overflow-hidden xl:w-full xl:h-full flex content-center;
 }
 
 /* .home__text-container {
@@ -136,7 +142,7 @@
 }
 
 .work_title {
-  @apply 2xl:text-[100px] sm:text-[60px] text-[50px] font-extrabold pb-10 text-white sm:mx-auto;
+  @apply 2xl:text-[100px] sm:text-[60px] text-[50px] font-extrabold pb-10 text-white sm:mx-auto text-center title;
 }
 
 .project_container {
@@ -144,7 +150,15 @@
 }
 
 .project_card {
-  @apply 2xl:basis-1/4 flex 2xl:flex-col flex-row bg-white py-5 mx-auto rounded-lg shadow-lg hover:-translate-y-1 hover:scale-105 px-5 delay-200 transition ease-in-out;
+  @apply 2xl:basis-1/4 flex 2xl:flex-col flex-row bg-white py-5 mx-auto rounded-lg shadow-lg hover:-translate-y-1 hover:scale-105 px-5 delay-100 transition ease-in-out;
+}
+
+.project_website_container {
+  @apply flex flex-col content-center padding-y gap-7;
+}
+
+.project_website_card {
+  @apply flex flex-col bg-white py-5 rounded-lg shadow-lg hover:-translate-y-1 hover:scale-105 px-5 delay-100 transition ease-in-out;
 }
 
 .project_title {

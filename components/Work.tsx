@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Card from './Card';
+import WebsiteCard from './WebsiteCard';
+import { CustomButton } from '.';
 
 function Work() {
   const [projects, setProjects] = useState([]);
@@ -27,15 +29,42 @@ function Work() {
     },
   ];
 
+  const websiteProject = [
+    {
+      title: 'OmahKos',
+      desc: 'This is an Education Application that uses Kotlin and Firebase for the core. I developed this app from scratch like User Research, Designing with Figma, Development, and Testing.',
+      imageLink: '/omahkos.jpeg',
+      url: 'https://omahkos-seven.vercel.app/',
+    },
+  ];
+
   return (
-    <div className="work">
-      <h1 className="work_title"> MY PROJECT </h1>
-      <div className="project_container">
-        {project.map((project, index) => {
-          return <Card imageLink={project.imageLink} projectTitle={project.title} projectDescription={project.desc} link={project.url} />;
-        })}
+    <>
+      <div className="work">
+        <h1 className="work_title"> APPLICATION PROJECT </h1>
+        <div className="project_container">
+          {project.map((project, index) => {
+            return <Card imageLink={project.imageLink} projectTitle={project.title} projectDescription={project.desc} link={project.url} />;
+          })}
+        </div>
       </div>
-    </div>
+      <div>
+        <div className="work ">
+          <h1 className="work_title"> WEBSITE PROJECT </h1>
+          <div className="project_website_container">
+            {websiteProject.map((project, index) => {
+              return <WebsiteCard imageLink={project.imageLink} projectTitle={project.title} projectDescription={project.desc} link={project.url} />;
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="flex bg-teal-950 padding-y">
+        <div className="flex flex-col mx-auto">
+          <h1 className=" text-center text-white">Check For More Project</h1>
+          <CustomButton title="More Project Here" containerStyles="flex bg-grey text-white rounded-full mt-5 " link="https://github.com/zeph1re" />
+        </div>
+      </div>
+    </>
   );
 }
 
