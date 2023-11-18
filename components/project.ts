@@ -36,7 +36,7 @@ const websiteProject = [
     title: 'OmahKos',
     desc: 'This is an Education Application that uses Kotlin and Firebase for the core. I developed this app from scratch like User Research, Designing with Figma, Development, and Testing.',
     imageLink: '/omahkos.jpeg',
-    url: 'https://omahkos-seven.vercel.app/',
+    url: 'https://omahkos.biz.id/',
   },
 ];
 
