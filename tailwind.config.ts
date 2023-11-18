@@ -8,7 +8,12 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
-        white: '#EEEBE3',
+        'bone-white': '#F9F6EE',
+        ivory: '#FFFFF0',
+        parchement: 'FCF5E5',
+        pearl: 'E2DFD2',
+        'sea-shell': 'FFF5EE',
+        'mint-cream': '#F5FFFA',
 
         'black-100': '#2B2C35',
         'primary-blue': {

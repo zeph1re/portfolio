@@ -1,19 +1,19 @@
-'use client';
-
-import { useState } from 'react';
+import React from 'react';
+import { project, websiteProject } from './project';
 import Card from './Card';
 import WebsiteCard from './WebsiteCard';
 import { CustomButton } from '.';
-import { project, websiteProject } from './project';
 
-function Work() {
+
+
+function Projects() {
   return (
     <>
       <div className="bg-teal-950">
         <div className="work">
           <h1 className="work_title"> APPLICATION PROJECT </h1>
           <div className="project_container">
-            {project.slice(0, 3).map((project, index) => {
+            {project.map((project) => {
               return <Card imageLink={project.imageLink} projectTitle={project.title} projectDescription={project.desc} link={project.url} />;
             })}
           </div>
@@ -39,4 +39,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default Projects;
