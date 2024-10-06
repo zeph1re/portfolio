@@ -5,7 +5,7 @@ function Header() {
   const handleClick = () => {};
 
   return (
-    <div className="bg-lime-900 pt-2">
+    <div className="bg-sherpa-blue pt-2">
       <div className="container mx-auto px-4 self-end text-white ">
         <div className="flex justify-center p-6">
           <div className="rounded-full py-2  backdrop-blur-md bg-white/10 hover:z-50 ">
@@ -18,8 +18,8 @@ function Header() {
                 <button className="header_button">About</button>
               </Link>
 
-              <Link href="/resume">
-                <button className="header_button">Resume</button>
+              <Link href="/service">
+                <button className="header_button">Service</button>
               </Link>
 
               <Link href="/projects">

@@ -15,11 +15,16 @@
 
 .title {
   font-family: 'Bebas Neue', sans-serif;
-  color: seashell;
 }
 
 .subtitle {
+  font-family: 'Montserrat', serif;
+  font-weight: bolder;
   color: seashell;
+}
+
+.heaters {
+  font-family: 'Heaters';
 }
 
 /* START: General styles */
@@ -65,7 +70,7 @@
 
 /* START: Hero styles */
 .hero {
-  @apply flex flex-col gap-5 relative z-0 max-w-[1920px] mx-auto bg-lime-900;
+  @apply flex flex-col gap-5 relative z-0 max-w-[1920px] mx-auto bg-sherpa-blue font-hero;
 }
 
 .hero__overlay {
@@ -73,11 +78,15 @@
 }
 
 .hero_title {
-  @apply 2xl:text-[400px] xl:text-[250px] md:text-[200px] sm:text-[120px] text-[100px] font-extrabold text-center title drop-shadow-lg;
+  @apply 2xl:text-[400px] xl:text-[350px] md:text-[200px] sm:text-[120px] text-[100px] font-extrabold text-center font-hero drop-shadow-lg text-rajah-yellow;
+}
+
+.hero_title_year {
+  @apply 2xl:text-[100px] xl:text-[75px] md:text-[50px] sm:text-[120px] text-[100px] font-extrabold text-center title drop-shadow-lg text-sea-shell;
 }
 
 .hero_subtitle {
-  @apply 2xl:text-[60px] sm:text-[20px] text-center font-medium subtitle;
+  @apply 2xl:text-[50px] mx-16 xl:mx-20 sm:text-[40px] font-bold font-montserrat text-white;
 }
 
 .hero__image-container {
@@ -96,7 +105,7 @@
 /* START: Home styles */
 
 .home {
-  @apply flex 2xl:flex-row flex-col gap-5 relative z-0 max-w-[1920px] padding-x py-36 mx-auto bg-gradient-to-b from-lime-900 to-grey;
+  @apply md:flex-col gap-5 relative z-0 padding-x py-12 mx-auto bg-sherpa-blue;
 }
 
 .home_padding {
@@ -107,16 +116,41 @@
   @apply 2xl:text-[800px];
 }
 
-.home_title {
-  @apply 2xl:text-[200px] sm:text-[70px] text-[50px] font-extrabold text-light-white title;
+.home_hello {
+  @apply 2xl:text-[60px] xl:text-[36px] text-[50px] font-extrabold text-light-white title drop-shadow-lg;
+}
+
+.home_name {
+  @apply 2xl:text-[54px] xl:text-[40px] text-[40px] font-extrabold text-light-white font-montserrat drop-shadow-lg;
+}
+
+.home_role {
+  @apply 2xl:text-[32px] xl:text-[24px] sm:text-[30px] text-[40px] font-extrabold text-light-white font-montserrat drop-shadow-lg;
 }
 
 .home_subtitle {
-  @apply 2xl:text-[25px] sm:text-[15px] pr-10 xl:line-clamp-none line-clamp-6 font-light mt-5 subtitle;
+  @apply 2xl:text-[20px] xl:text-[16px] sm:text-[15px] pr-10 xl:line-clamp-none line-clamp-6 font-light mt-5 text-bone-white text-justify mb-5;
+}
+
+.home_subtitle_bold {
+  @apply font-extrabold text-secondary-red;
+}
+
+.home_contact_list {
+  @apply 2xl:text-[20px] xl:text-[16px] font-light my-auto text-bone-white text-justify ml-3 flex-1;
+}
+
+.home_image_container {
+  @apply flex basis-5/12 align-middle justify-center;
+}
+
+.home_info_container {
+  @apply basis-7/12 flex flex-col ps-8 my-auto;
 }
 
 .home_image {
-  @apply sm:overflow-hidden xl:w-full xl:h-full flex content-center;
+  @apply flex content-center justify-center self-center
+  hover:scale-110 transition ease-in-out;
 }
 
 /* .home__text-container {
@@ -139,6 +173,42 @@
   @apply mt-16 flex justify-center items-center flex-col gap-2;
 } */
 /* END: Home styles */
+
+/* START: About */
+
+.about {
+  @apply bg-gradient-to-tr from-sherpa-blue to-gray-500 py-12 px-32 text-bone-white;
+}
+
+.about_head {
+  @apply 2xl:text-[54px] xl:text-[40px] font-extrabold mb-3;
+}
+
+.about_head2 {
+  @apply 2xl:text-[28px] xl:text-[24px] font-bold;
+}
+
+.about_year {
+  @apply 2xl:text-[20px] xl:text-[14px] mt-1;
+}
+
+.about_role {
+  @apply 2xl:text-[20px] xl:text-[14px] mt-1 font-thin italic;
+}
+
+.about_instance {
+  @apply 2xl:text-[20px] xl:text-[14px] mt-1 font-extrabold;
+}
+
+.about_skill_point {
+  @apply 2xl:text-[20px] xl:text-[14px] mt-1;
+}
+
+.about_tools_point {
+  @apply 2xl:text-[20px] xl:text-[14px] mt-1 font-medium;
+}
+
+/* END: About*/
 
 /* START : Work Styles */
 
@@ -179,6 +249,37 @@
 }
 
 /* END : Work Styles */
+
+/* START : Services */
+.service_title {
+  @apply text-[30px] flex justify-center p-5 font-extrabold;
+}
+
+.service_point_container {
+  @apply flex flex-1 flex-col rounded-xl  px-12 py-5 m-2 border-2;
+}
+
+.service_point_header {
+  @apply flex-row flex justify-stretch py-3;
+}
+
+.service_point_title {
+  @apply text-[20px] flex flex-1 justify-center;
+}
+
+.service_point_rate {
+  @apply text-[20px] flex flex-none justify-end;
+}
+
+.service_point_desc {
+  @apply text-[16px] flex flex-none text-justify my-5;
+}
+
+.service_point_exp {
+  @apply flex-1 flex justify-center;
+}
+
+/* END : Services */
 
 /* START: Car Card styles */
 .car-card {

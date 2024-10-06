@@ -8,7 +8,7 @@ import React from 'react';
 function CustomButton({ title, containerStyles, link }: CustomButtonProps) {
   return (
     <>
-      <Link href={`${link}`} className={`custom-btn ${containerStyles}`}>
+      <Link href={`${link}`} target="_blank" className={`custom-btn ${containerStyles}`}>
         <button disabled={false} type={'button'} className="flex flex-row">
           <span className="flex-1">{title}</span>
         </button>
