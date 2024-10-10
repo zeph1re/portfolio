@@ -4,8 +4,6 @@ import Card from './Card';
 import WebsiteCard from './WebsiteCard';
 import { CustomButton } from '.';
 
-
-
 function Projects() {
   return (
     <>
@@ -26,12 +24,6 @@ function Projects() {
                 return <WebsiteCard imageLink={project.imageLink} projectTitle={project.title} projectDescription={project.desc} link={project.url} />;
               })}
             </div>
-          </div>
-        </div>
-        <div className="flex bg-teal-950 padding-y">
-          <div className="flex flex-col mx-auto">
-            <h1 className=" text-center text-white">Check For More Project</h1>
-            <CustomButton title="More Project Here" containerStyles="flex bg-grey text-white rounded-full mt-5 " link="/projects" />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import { Footer } from '@/components';
 function About() {
   return (
     <>
+      <div className=" mx-auto py-8  bg-sherpa-blue"></div>
       <Header />
       <Introduction />
       <Background />

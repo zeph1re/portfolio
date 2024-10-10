@@ -56,11 +56,11 @@
 /* START : Header styles */
 
 .header {
-  @apply flex max-w-[500px];
+  @apply flex  z-10 fixed top-0 left-0 right-0;
 }
 
 .header_button {
-  @apply sm:text-[14px] text-[9px] rounded-full p-1 bg-emerald-700  hover:-translate-y-1 hover:scale-105 px-5 delay-200 transition ease-in-out;
+  @apply sm:text-[14px] text-[9px] rounded-full p-1 bg-emerald-700  hover:-translate-y-1 hover:scale-105 px-5 delay-200 transition ease-in-out z-50;
 }
 .header_padding-x {
   @apply flex justify-center p-6;
@@ -70,36 +70,17 @@
 
 /* START: Hero styles */
 .hero {
-  @apply flex flex-col gap-5 relative z-0 max-w-[1920px] mx-auto bg-sherpa-blue font-hero;
-}
-
-.hero__overlay {
-  @apply flex;
+  @apply flex flex-col z-0 max-w-[1920px] my-auto mx-auto bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] h-screen  justify-center;
 }
 
 .hero_title {
-  @apply 2xl:text-[400px] xl:text-[350px] md:text-[200px] sm:text-[120px] text-[100px] font-extrabold text-center font-hero drop-shadow-lg text-rajah-yellow;
-}
-
-.hero_title_year {
-  @apply 2xl:text-[100px] xl:text-[75px] md:text-[50px] sm:text-[120px] text-[100px] font-extrabold text-center title drop-shadow-lg text-sea-shell;
+  @apply flex 2xl:text-[100px] xl:text-[80px] md:text-[50px] sm:text-[40px] text-[100px] font-extrabold text-center font-montserrat drop-shadow-lg text-bone-white justify-center z-0;
 }
 
 .hero_subtitle {
-  @apply 2xl:text-[50px] mx-16 xl:mx-20 sm:text-[40px] font-bold font-montserrat text-white;
+  @apply flex 2xl:text-[40px] xl:text-[30px]  sm:text-[30px] px-32 font-montserrat text-white justify-center text-center;
 }
 
-.hero__image-container {
-  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
-}
-
-.hero__image {
-  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
-}
-
-.hero__image-overlay {
-  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
-}
 /* END: Hero styles */
 
 /* START: Home styles */
@@ -117,11 +98,11 @@
 }
 
 .home_hello {
-  @apply 2xl:text-[60px] xl:text-[36px] text-[50px] font-extrabold text-light-white title drop-shadow-lg;
+  @apply 2xl:text-[60px] xl:text-[40px] text-[50px] flex-auto font-extrabold text-light-white title drop-shadow-lg pt-3;
 }
 
 .home_name {
-  @apply 2xl:text-[54px] xl:text-[40px] text-[40px] font-extrabold text-light-white font-montserrat drop-shadow-lg;
+  @apply 2xl:text-[54px] xl:text-[36px] text-[40px] font-extrabold text-light-white font-montserrat drop-shadow-lg;
 }
 
 .home_role {
@@ -129,15 +110,15 @@
 }
 
 .home_subtitle {
-  @apply 2xl:text-[20px] xl:text-[16px] sm:text-[15px] pr-10 xl:line-clamp-none line-clamp-6 font-light mt-5 text-bone-white text-justify mb-5;
+  @apply 2xl:text-[20px] xl:text-[14px] sm:text-[15px] pr-10  font-montserrat mt-5 text-bone-white text-justify mb-5 font-light;
 }
 
 .home_subtitle_bold {
-  @apply font-extrabold text-secondary-red;
+  @apply font-bold text-secondary-red font-montserrat;
 }
 
 .home_contact_list {
-  @apply 2xl:text-[20px] xl:text-[16px] font-light my-auto text-bone-white text-justify ml-3 flex-1;
+  @apply 2xl:text-[20px] xl:text-[14px] font-light my-auto text-bone-white text-justify ml-3 flex-1 font-montserrat;
 }
 
 .home_image_container {
@@ -145,12 +126,16 @@
 }
 
 .home_info_container {
-  @apply basis-7/12 flex flex-col ps-8 my-auto;
+  @apply basis-7/12 flex flex-col ps-8 my-auto font-montserrat;
 }
 
 .home_image {
   @apply flex content-center justify-center self-center
   hover:scale-110 transition ease-in-out;
+}
+
+.beacon {
+  @apply flex flex-none my-auto items-center justify-end bg-teal-800 text-bone-white text-sm font-medium font-montserrat px-5 py-2 rounded-full mr-10;
 }
 
 /* .home__text-container {
@@ -252,7 +237,7 @@
 
 /* START : Services */
 .service_title {
-  @apply text-[30px] flex justify-center p-5 font-extrabold;
+  @apply 2xl:text-[100px] sm:text-[60px] text-[50px] font-extrabold pb-10 text-sherpa-blue sm:mx-auto text-center title;
 }
 
 .service_point_container {
@@ -354,7 +339,7 @@
 /* START: Footer styles */
 
 .footer {
-  @apply flex 2xl:flex-row flex-col gap-5 px-5 justify-center text-black py-5 bg-orange-100;
+  @apply flex xl:flex-row flex-col gap-5 px-5 justify-center text-black py-5 bg-orange-100;
 }
 
 /* .footer {

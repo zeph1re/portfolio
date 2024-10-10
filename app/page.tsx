@@ -6,6 +6,8 @@ export default function Dashboard() {
   return (
     <main className="overflow-hidden">
       <Header />
+      <div className=" mx-auto py-8  bg-sherpa-blue"></div>
+
       {/* <Hero /> */}
       <About />
       <Work />

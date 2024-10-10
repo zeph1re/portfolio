@@ -8,6 +8,7 @@ function Resume() {
   return (
     <>
       <Header />
+      <div className=" mx-auto py-10 bg-bone-white"></div>
       <Services />
       <Footer />
     </>

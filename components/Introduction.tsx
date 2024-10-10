@@ -15,7 +15,7 @@ function Introduction() {
   const gmailUrl = 'mailto:arlinnoganda@gmail.com?';
   return (
     <>
-      <div className="home">
+      <div className="home ">
         <div className="flex flex-row max-w-[1920px] mx-auto">
           <div className="home_image_container ">
             <div className="home_image">
@@ -31,7 +31,17 @@ function Introduction() {
             </div>
           </div>
           <div className="home_info_container">
-            <h1 className="home_hello">HELLO,</h1>
+            <div className="container flex mx-auto flex-row gap-4">
+              <h1 className="home_hello">HELLO,</h1>
+              <span className="beacon ">
+                <span className="relative flex h-2 w-2 me-2 ">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
+                </span>
+                Available for Work
+              </span>
+            </div>
+
             <h2 className="home_name">I'm Ganda</h2>
             <h3 className="home_role">A Mobile Developer and UI/UX Designer.</h3>
             <p className="home_subtitle">
